@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/master.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Stint+Ultra+Condensed&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Header-->
+    <header class="header">
+        <h1>
+            <img src="img/Logo-RP-claro.png" alt="">
+        </h1>
+    </header>
+
+    <!--NAVIGATION-->
+
+    <nav class="nav">
+        <a href="#">Inicio</a>
+        <a href="#">Quienes Somos</a>
+        <a href="#">Servicios</a>
+        <a href="#">Tarifas</a>
+        <a href="#"">Localizacion</a>
+    </nav>
+
+    <!--Quienes Somos-->
+    <section class="content who">
+            <h2 class="tittle">
+                Quienes Somos
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae facilis eligendi quaerat deleniti
+                officiis! Debitis.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, obcaecati praesentium doloribus sequi hic
+                minus voluptatem officiis quisquam et repudiandae. Suscipit eaque quos laborum quis impedit modi fuga?
+                Consectetur aliquam at, magni ea quidem itaque eos excepturi tempore aspernatur dolor dignissimos non
+                sapiente, in debitis ut. Ducimus ipsa quidem omnis?</p>
+            </section>
+
+            <!--Servicios-->
+            <section class="content servicios">
+                <h2 class="tittle">
+                    Servicios
+                </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, nesciunt accusantium autem fugit
+                    error perferendis.</p>
+                <ul class="list-servicios">
+                    <li>
+                        <figure>
+                            <img src="img/usa1.png" alt="">
+                            <figcaption>Lorem, ipsum dolor.</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="img/colombia1.jpg" alt="">
+                            <figcaption>Lorem, ipsum dolor.</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="img/cajaadd.png" alt="">
+                            <figcaption>Lorem, ipsum dolor.</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </section>
+
+            <!--Tarifas-->
+            <section class="content tarifas">
+                <article class="contain">
+                    <h2 class="tittle">
+                        --Tarifas--
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni deserunt repudiandae laborum
+                        sapiente repellat
+                        blanditiis!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo hic aperiam dolore reiciendis
+                        fugit, iusto labore,
+                        eveniet quam inventore voluptatem at possimus ea dolor vel accusamus quasi maiores
+                        repudiandae itaque. Molestias
+                        earum, ipsa a quis, eaque odit consectetur dolorum fugiat quaerat labore autem magnam cumque
+                        eligendi nulla. Hic,
+                        vel pariatur?</p>
+                    <a href="#" class="btn">contactanos</a>
+                </article>
+            </section>
+
+            <!--Localizacion-->
+            <section class="content localizacion">
+                <h2 class="tittle">Localizacion</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, blanditiis laborum deleniti
+                    ratione expedita
+                    adipisci!</p>
+                <figure class="map">
+                    <img src="img/buzon.png" alt="">
+                </figure>
+                <div id="map" style="height: 500px;"></div>
+
+            </section>
+
+</body>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=TU_CLAVE_DE_API&callback=initMap" async defer></script>
+
+<script>
+    function initMap() {
+        var location = { lat: LATITUD, lng: LONGITUD }; // reemplace LATITUD y LONGITUD con las coordenadas del local
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15, // nivel de zoom del mapa
+            center: location // ubicación del mapa
+        });
+        var marker = new google.maps.Marker({
+            position: location,
+            map: map
+        });
+    }
+
+    initMap();
+
+</script>
+
+</html>

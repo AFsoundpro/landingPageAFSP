@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+
+}
+
+/*BODY*/
+
+body {
+    background: #dd0000;
+    text-align: center;
+    font: 300 20px/1.7 'Roboto Condensed', sans-serif;
+}
+
+.header {
+    background: url(../img/img5.jpg) no-repeat center top;
+    background-size: cover;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header img {
+    height: 250px;
+    width: 350px;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: silver;
+    height: 63px;
+}
+
+.nav a{
+    color: #fff;
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Stint Ultra Condensed', cursive;
+    
+}
+
+.content {
+    padding: 80px 0;
+}
+
+.who {
+    background: darkred;
+    color: #fff;
+}
+
+.who p {
+    max-width: 1055px;
+    margin: 0 auto;
+}
+
+.tittle {
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font: 60px 'Stint Ultra Condensed';
+}
+
+p {
+    margin-bottom: 40px;
+}
+
+/* SERVICIOS */
+
+.servicios {
+    color: #fff;
+}
+
+.list-servicios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+}
+ 
+.list-servicios img {
+    position: relative;
+    z-index: 1;
+    height: 100px;
+    width: 100px;
+    margin-top: 35px;
+}
+
+.list-servicios figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 150px;
+    height: 190px;
+    flex-flow: column;
+}
+.list-servicios figure::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    z-index: 0;
+    background-color: #fff;
+    width: 150px;
+    height: 150px;
+}
+.list-servicios li {
+    padding: 0 30px;
+}
+
+.list-servicios figcaption {
+    position: relative;
+    left: 0;
+    top: 45px;
+    bottom: -40px;
+}
+
+
+/*tarifas*/
+
+.tarifas {
+    background: url(../img/imgtarifas.jpg) no-repeat center top;
+    background-size: cover;
+    color: darkolivegreen;
+    text-align: left;
+}
+
+.contain {
+    max-width: 1055px;
+    margin: 0 auto;
+}
+
+.tarifas p {
+    max-width: 450px;
+}
+
+.btn {
+    border: 2px solid #fff;
+    padding: 10px 40px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #f42c2c;
+    color: #FFF;
+  }
+
+
+/*Localizacion*/
+
+.localizacion {
+    color: #fff;
+    padding-bottom: 0;
+}
